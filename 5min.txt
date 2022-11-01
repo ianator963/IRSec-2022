@@ -1,0 +1,30 @@
+My router stuff:
+# Change all the passwords for all users
+:: add a differently named user
+:: make it an admin
+:: disable the default admin user
+:: disable SSH, remove all SSH keys
+# Check the GUI for pfsense
+- https://<<LAN IP>>
+- Default user and password: admin/pfsense
+- System
+- Routes
+- gateways
+- Manage users
+- Package manager
+  - Check PPP
+  - Check aliases
+  - Check port forwarding
+  - Check and implement rules
+      - easyrule pass/block <interface> <protocol> <source IP> <destination ip>
+[destination port]
+- Check DNS forwarder
+- Packet Capture
+- Pfsense commands
+  - https://www.onebyte.org/blog/2015/08/29/useful-pfsense-commands/
+# Make a copy of the initial logs
+# Check scored service status and location
+# Check logs and begin threat hunting
+Other stuff:
+# Start a wireshark capture
+# remember to take screenshots
